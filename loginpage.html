@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    
+    <!-- Bootswatch Darkly CSS (Bootstrap Dark Theme) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/register_styles.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Consolas&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar-custom">
+        <div class="brand-container">
+            <a href="homepage.html"><img src="img/logo.png" alt="brand logo" class="brand-logo"></a>
+            <a class="navbar-brand" href="homepage.html">Tech-Flux Suite</a>
+        </div>
+
+        <!-- Burger Menu Icon -->
+        <div class="burger" id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+            <a class="nav-link" href="homepage.html">Home</a>
+            <a class="nav-link" href="aboutpage.html">About & Contact</a>
+            <a class="nav-link" href="guidespage.html">Guides</a>
+            <a class="nav-link" href="downloadpage.html">Downloads</a>
+            <div class="dropdown">
+                <a class="nav-link" href="#">Account</a>
+                <div class="dropdown-content">
+                    <a href="loginpage.html">Login</a>
+                    <a href="registerpage.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Form Section -->
+    <div class="container body-content-container my-5 p-5">
+        <div class="login-form">
+            <h2 class="text-center mb-4">Login to Tech-Flux Suite</h2>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password <a class="forgot-pass" href="#">forgot password?</a></label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+
+            <div class="content-container">
+                <div class="home-title">
+                    <h2>Tech-Flux Suite</h2>
+                    <hr>
+                    <h3>Redefining Your Computer’s Performance</h3>
+                </div>
+                <div class="home-wallpaper">
+                    <img src="img/home.png" alt="home wallpaper">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-custom py-4 text-center">
+        <div class="container">
+            <h3>© Tech-Flux Suite 2024-2025</h3>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.js"></script>
+
+    <!-- Burger Menu JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.getElementById('burger');
+            const navLinks = document.getElementById('nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                burger.classList.toggle('toggle');
+            });
+        });
+    </script>
+</body>
+</html>

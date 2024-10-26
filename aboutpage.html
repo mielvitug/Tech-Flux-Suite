@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Contact page</title>
+    <link rel="stylesheet" href="css/about_styles.css">
+</head>
+
+<body>
+    <nav class="navbar-custom">
+        <div class="brand-container">
+            <a href="homepage.html"><img src="img/logo.png" alt="brand logo" class="brand-logo"></a>
+            <a class="navbar-brand" href="homepage.html">Tech-Flux Suite</a>
+            <!-- Burger Menu Icon -->
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    
+        <div class="nav-links" id="nav-links">
+            <a class="nav-link" href="homepage.html">Home</a>
+            <a class="nav-link" href="aboutpage.html">About & Contact</a>
+            <a class="nav-link" href="guidespage.html">Guides</a>
+            <a class="nav-link" href="downloadpage.html">Downloads</a>
+            <div class="dropdown">
+                <a class="nav-link" href="#">Account</a>
+                <div class="dropdown-content">
+                    <a href="loginpage.html">Login</a>
+                    <a href="registerpage.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-content-container">
+        <div class="About-Tech">
+            <h2 class="about-tech-title">Our Team</h2>
+            <h3>Tech-Flux Suite is at the forefront of modern computing optimization, empowering users with tools and knowledge to take control of their system's performance. Founded with the vision of making high-performance computing accessible to everyone, Tech-Flux Suite brings together a passionate team of experts and innovators dedicated to solving the complex challenges of system efficiency. From maximizing hardware potential to enhancing software interactions, our platform offers a comprehensive solution for tech enthusiasts and professionals alike.</h3>
+            <h3>Since its inception, Tech-Flux Suite has grown into a trusted resource for performance tuning and optimization across the tech industry. Whether it's data centers, gaming rigs, or personal computers, we’re committed to helping users push the boundaries of what's possible in computing, setting new benchmarks for speed, efficiency, and power management.</h3>
+        </div>
+    </div>
+
+    <div class="body-content-container">
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have questions, suggestions, or need support with Tech-Flux Suite, feel free to reach out to us. We value your feedback and are here to help.</p>
+            <h3>Email:</h3>
+            <p><a href="mailto:support@techfluxsuite.com" class="contact-link">support@techfluxsuite.com</a></p>
+            <h3>Follow Us:</h3>
+            <p>Stay connected with us for the latest updates and tutorials:</p>
+
+            <div class="social-media">
+                <a href="https://reddit.com/techfluxsuite" target="_blank" class="social-media-container">
+                    <img src="img/reddit.png" alt="reddit link">
+                    <span>Reddit</span>
+                </a>
+                <a href="https://discord.com/techfluxsuite" target="_blank" class="social-media-container">
+                    <img src="img/discord.png" alt="discord link">
+                    <span>Discord</span>
+                </a>
+                <a href="https://github.com/techfluxsuite" target="_blank" class="social-media-container">
+                    <img src="img/github.png" alt="github link">
+                    <span>Github</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-custom">
+        <h3>© Tech-Flux Suite 2024-2025</h3>
+    </footer>
+
+        <!-- Burger Menu Script -->
+        <script>
+            const burger = document.getElementById('burger');
+            const navLinks = document.getElementById('nav-links');
+        
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>
+</body>
+</html>

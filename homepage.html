@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/home_styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar-custom">
+        <div class="brand-container">
+            <a href="#"><img src="img/logo.png" alt="brand logo" class="brand-logo"></a>
+            <a class="navbar-brand" href="#">Tech-Flux Suite</a>
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    
+        <div class="nav-links" id="nav-links">
+            <a class="nav-link" href="homepage.html">Home</a>
+            <a class="nav-link" href="downloadpage.html">About & Contact</a>
+            <a class="nav-link" href="guidespage.html">Guides</a>
+            <a class="nav-link" href="downloadpage.html">Downloads</a>
+            <div class="dropdown">
+                <a class="nav-link" href="#">Account</a>
+                <div class="dropdown-content">
+                    <a href="loginpage.html">Login</a>
+                    <a href="registerpage.html">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <div class="content-container">
+        <div class="home-title">
+            <h2>Tech-Flux Suite</h2>
+            <hr>
+            <h3>Redefining Your Computer’s Performance</h3>
+        </div>
+        <div class="home-wallpaper">
+            <img src="img/home.png" alt="home wallpaper">
+        </div>
+    </div>
+
+    <div class="body-content-container">
+        <div class="About-Tech">
+            <h2 class="about-tech-title">What is Tech-Flux Suite?</h2>
+            <h3>Tech-Flux Suite is an all-in-one platform dedicated to optimizing and fine-tuning computer performance. This comprehensive suite offers cutting-edge, high-quality information on tools and techniques to help users enhance their systems, from boosting CPU and GPU efficiency to managing system temperatures, power consumption, and more. With a focus on practical, actionable solutions, Tech-Flux Suite provides step-by-step tutorials, expert advice, and performance tips that make system tuning accessible to all.
+            <br><br> Whether you're a casual user seeking to streamline your setup or a tech enthusiast looking to push your hardware to its limits, Tech-Flux Suite offers the knowledge and resources to help you unlock your computer’s full potential and achieve peak performance.</h3>
+        </div>
+    </div>
+
+    <div class="body-content-container">
+        <div class="Guide-Videos">
+            <h2 class="guide-title">Video Tutorials Guidepoint</h2>
+            <div class="video-container">
+                <iframe class="guide-video" src="https://www.youtube.com/embed/f2zQiMKdso8?si=6LE0SaxQPd8ftPLI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="guide-video" src="https://www.youtube.com/embed/XLnRjtmIKgY?si=l2Q8NaAe58z14lfW" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="guide-video" src="https://www.youtube.com/embed/qLojynOMRIM?si=YyrKE9pZ9qWRmMO0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="link-container">
+                <h3><a href="guidespage.html" target="_blank" class="tutorial-page-link">See more tutorials here</a>See more tutorials here</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-content-container">
+        <div class="App-Downloads">
+            <h2 class="App-Downloads-Title">Overclocking Utilities Download</h2>
+            <div class="download-container">
+                <div>
+                    <img src="img/msi.png" alt="MSI Afterburner">       
+                    <h3><a href="https://www.msi.com/Landing/afterburner/graphics-cards" class="download-link" target="_blank">Download Here</a></h3>
+                </div>
+                <div>
+                    <img src="img/x86.png" alt="Universal x86 Tuning Utility">
+                    <h3><a href="https://amdaputuningutility.com/#install" class="download-link" target="_blank">Download Here</a></h3>
+                </div>
+            </div>
+            <div class="link-container">
+                <h3><a href="downloadpage.html" target="_blank" class="download-page-link">See more downloads here</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-content-container">
+        <div class="Disclaimers">
+            <h2 class="disclaimers-title">Disclaimer</h2>
+            <ul>
+                <li>Tech-Flux Suite is provided as-is without warranties of any kind. Users are responsible for understanding the risks associated with making system-level changes, including overclocking, and assume all responsibility for any consequences that arise.<br></li>
+              
+                <li>If you share Tech-Flux Suite in a video or text post online (e.g., YouTube, Reddit), please credit the Tech-Flux Suite team by linking to the official Tech-Flux Suite website or GitHub release page. This ensures viewers can download the software from a trusted source, giving proper recognition to the developers.<br></li>
+              
+                <li>The Tech-Flux Suite team is not liable for any damages resulting from the use of this software. Use it at your own risk!<br></li>
+              
+                <li>All trademarks such as "Intel", "AMD", "Nvidia", belong to their respective companies. Tech-Flux Suite makes no claims to these assets and uses them solely for informational purposes.<br></li>
+
+                <li>Independent YouTube content creators are credited for their expertise and instructional videos used as references for Tech-Flux Suite guides. These creators are not affiliated with Tech-Flux Suite.<br></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer-custom">
+        <h3>© Tech-Flux Suite 2024-2025</h3>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+    
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    
+</body>
+</html>

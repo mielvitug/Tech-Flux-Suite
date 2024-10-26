@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Consolas&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: 'Consolas', Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.brand-logo {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-custom {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #141414;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(104, 104, 104);
+}
+
+.brand-container {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.nav-links {
+    margin-top: 5px;
+    margin-right: 60px;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: var(--nav-link-color, white);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the dropdown just below the account link */
+    left: 50%; /* Start from the center of the parent */
+    transform: translateX(-50%); /* Adjust it to be perfectly centered */
+    background-color: #1f1f1f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #686868;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1; /* Show the dropdown on hover */
+    visibility: visible;
+}
+
+
+.dropdown a.nav-link {
+    cursor: pointer;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.home-wallpaper {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.home-wallpaper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.home-title {
+    max-width: 90%;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+.home-title h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.home-title hr {
+    border: none;
+    border-top: 2px solid #ffffff;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.home-title h3 {
+    font-size: 1.2em;
+    margin-top: 0;
+    font-style: italic;
+    color: #ffffffcc;
+}
+
+.body-content-container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 2px solid rgb(104, 104, 104);
+}
+
+.Disclaimers li
+{
+    margin-bottom: 25px;
+}
+
+.About-Tech {
+    text-align: left;
+    color: #ffffff;
+}
+
+.About-Tech h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.About-Tech h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #ffffffcc;
+    text-align: justify;
+}
+
+.Guide-Videos {
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.Guide-Videos h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.guide-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.guide-video {
+    flex: 1 1 calc(100% - 20px);
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.link-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.tutorial-page-link {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #00d1b2;
+    padding: 0.5rem;
+}
+
+.tutorial-page-link:hover {
+    text-decoration: underline;
+    color: #00ffbf;
+}
+
+.download-page-link {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #00d1b2;
+    padding: 0.5rem;
+}
+
+.download-page-link:hover {
+    text-decoration: underline;
+    color: #00ffbf;
+}
+
+.App-Downloads {
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.App-Downloads-Title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.download-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.download-link {
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgb(66, 144, 170);
+    padding: 0.5rem;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+    color: #00ffbf;
+}
+
+@media (min-width: 768px) {
+    .content-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home-title {
+        max-width: 40%;
+        text-align: left;
+    }
+
+    .home-wallpaper {
+        max-width: 50%;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .guide-video {
+        flex: 1 1 calc(33.333% - 20px);
+        height: 240px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .guide-video {
+        height: 300px;
+    }
+}
+
+.footer-custom {
+    background-color: #141414;
+    border-top: 2px solid rgb(104, 104, 104);
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #141414;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        right: 20px; /* Places the burger icon on the far right */
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 3px 0;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .navbar-custom {
+        flex-direction: column;
+        padding: 5px;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        gap: 0.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.9em;
+        padding: 6px 5px;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.1rem;
+    }
+
+    .brand-logo {
+        width: 30px;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-right: -10px;
+    }
+
+    .line {
+        width: 18px;
+        height: 2px;
+        right: 5px;
+        background-color: white;
+        margin: 2px 0;
+    }
+
+    .content-container {
+        margin: 5px auto;
+        padding: 5px;
+    }
+
+    .home-title h2 {
+        font-size: 1.4em;
+    }
+
+    .home-title h3 {
+        font-size: 0.85em;
+    }
+
+    .home-wallpaper img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .body-content-container {
+        margin: 5px auto;
+        padding: 5px;
+    }
+
+    .About-Tech h2 {
+        font-size: 1.2em;
+    }
+
+    .About-Tech h3 {
+        font-size: 0.85em;
+    }
+
+    .guide-video {
+        height: 120px;
+    }
+
+    .download-container div img {
+        width: 80px;
+    }
+
+    .App-Downloads h2 {
+        font-size: 1.2em;
+    }
+
+    .footer-custom h3 {
+        font-size: 0.8em;
+    }
+}
+
+
+@media (min-width: 321px) and (max-width: 375px) {
+    .navbar-custom {
+        flex-direction: column;
+        padding: 8px;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        gap: 0.3rem;
+    }
+
+    .nav-link {
+        font-size: 1em;
+        padding: 8px 5px;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0.2rem;
+    }
+
+    .brand-logo {
+        width: 35px;
+    }
+
+    .content-container {
+        margin: 10px auto;
+        padding: 8px;
+    }
+
+    .home-title h2 {
+        font-size: 1.5em;
+    }
+
+    .home-title h3 {
+        font-size: 0.9em;
+    }
+
+    .home-wallpaper img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .body-content-container {
+        margin: 8px auto;
+        padding: 8px;
+    }
+
+    .About-Tech h2 {
+        font-size: 1.3em;
+    }
+
+    .guide-video {
+        height: 130px;
+    }
+
+    .download-container div img {
+        width: 85px;
+    }
+
+    .footer-custom h3 {
+        font-size: 0.85em;
+    }
+}
